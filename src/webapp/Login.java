@@ -12,9 +12,9 @@ import java.io.PrintWriter;
 public class Login extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        PrintWriter pw = response.getWriter();
-        pw.println("doPost-version<br>");
-        pw.println("login-name" + request.getParameter("loginname") + " password:"+request.getParameter("password"));
+        PrintWriter out = response.getWriter();
+        out.println("doPost-version<br>");
+        out.println("login-name" + request.getParameter("loginname") + " password:"+request.getParameter("password"));
        /* String loginname = request.getParameter("loginname");
         String password = request.getParameter("password");
         if (loginname.equals("java") && password.equals("1234")) {
