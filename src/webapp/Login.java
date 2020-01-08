@@ -30,8 +30,8 @@ public class Login extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html");
        // System.out.println(request.getContextPath());
-        PrintWriter pw = response.getWriter();
-        pw.println("login-name" + request.getParameter("loginname") + "password:" + request.getParameter("password"));
+        PrintWriter out = response.getWriter();
+        out.println("login-name" + request.getParameter("loginname") + "password:" + request.getParameter("password"));
 
     }
 }
